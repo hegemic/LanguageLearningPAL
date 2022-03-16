@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanguageLearningPal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <img src="images/HeaderLLP.png" alt="LanguageLearningPal">
+            </div>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="norwegianPage.html">Norwegian</a>
+                <a href="germanPage.html">German</a>
+                <a href="quizzes.html">Quizzes</a>
+                <a class="active" href="minigames.html">Minigames</a>
+            </div>
+
+            <div class="info-guide">
+                <p></p>
+                <a href="minigames.html" class="backButton">Back</a>
+
+                <h1 class="flashcardsH1">Flashcards</h1>
+                <div class="cards">
+                    <div id="front">
+                        <p>Term</p>
+                        <!--Term/german here-->
+                    </div>
+
+                    <div id="back">
+                        <p>Definition</p>
+                        <!--Definition/english here-->
+                    </div>
+                </div>
+
+                <div id ="activeCardButtons">
+                        <button id="prev" onclick="prevCard()">Previous Card</button>
+                        <button id="flip" type="button" value="Flip" onclick="flash()">Flip</button>
+                        <button id="next" onclick="nextCard()">Next Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="flashcards.js"></script>
+</body>
+</html>
